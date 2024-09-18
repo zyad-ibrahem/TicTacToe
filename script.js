@@ -80,7 +80,7 @@ function resetBoard() {
 // Start the timer
 function startTimer() {
   timer = setInterval(() => {
-    seconds += 0.5;
+    seconds += 1;
     const minutes = Math.floor(seconds / 60);
     const secs = seconds % 60;
     timerDiv.textContent = `Time: ${String(minutes).padStart(2, "0")}:${String(
